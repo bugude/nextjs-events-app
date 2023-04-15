@@ -1,0 +1,157 @@
+header {
+	height: auto;
+	padding: 15px 30px;
+	background: linear-gradient(320deg, #69e2d3, transparent);
+	> div {
+		width: 100%;
+		max-width: 1250px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.title {
+		font-size: 40px;
+		width: 50%;
+		text-transform: uppercase;
+	}
+	.topNav {
+		display: flex;
+		justify-content: space-between;
+		nav {
+			display: flex;
+			align-items: center;
+		}
+		ul {
+			display: flex;
+			text-decoration: none;
+			list-style: none;
+			gap: 15px;
+			li {
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+main {
+	width: 100%;
+	max-width: 1250px;
+	margin: auto;
+	padding: 50px 30px;
+	min-height: 100vh;
+}
+
+.home_page {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	.card {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+		align-content: center;
+		&:nth-child(even) {
+			direction: rtl;
+		}
+		.card_content {
+			width: 50%;
+		}
+	}
+}
+
+.about_us {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.about_us_sub_header {
+		display: flex;
+		flex-direction: row;
+		// text-decoration: none;
+		list-style: none;
+	}
+}
+
+.events_page {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	.card {
+		position: relative;
+		h2 {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			text-align: center;
+			font-size: 38px;
+			text-transform: uppercase;
+			color: white;
+			text-shadow: 1px 1px 20px black;
+			display: flex;
+		}
+	}
+}
+
+.cat_events {
+	.content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 30px;
+		width: 100%;
+		justify-content: flex-start;
+		.card {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.event_single_page {
+	.email_registration {
+		margin-top: 25px;
+		label {
+			display: flex;
+			margin-bottom: 15px;
+			margin-top: 25px;
+			font-size: 18px;
+			font-weight: 800;
+			text-transform: uppercase;
+		}
+		input {
+			height: 40px;
+			min-width: 350px;
+			border-radius: 5px;
+			/* box-shadow: none; */
+			border: 1px solid #ccc;
+			font-size: 18px;
+		}
+		button {
+			border-radius: 5px;
+			height: 40px;
+			min-width: 150px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			text-transform: uppercase;
+			margin-left: 10px;
+			font-weight: 600;
+			background: #0e8a7c;
+			color: black;
+			cursor: pointer;
+			&:hover {
+				color: white;
+				background-color: #0a3f1a;
+			}
+		}
+	}
+}
